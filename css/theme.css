@@ -2,6 +2,9 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+img {
+    width: 100%;
+}
 
 .copyright {
     color: #ffffff;
@@ -48,4 +51,10 @@ body {
 
 .author a {
     color: #ee4444;
+}
+
+@media (min-width: 1500px){
+    .container {
+        width: 1480px;
+    }
 }
