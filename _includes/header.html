@@ -28,13 +28,29 @@
             </div>
             <nav class="collapse navbar-collapse" id="bs-navbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="{{ site.baseurl }}/">Home</a></li>
-                    <li class="active visible-xs-block"><a href="{{ site.baseurl }}/links.html">Links</a></li>
-                    <li class="active"><a href="{{ site.baseurl }}/archive.html">Archive</a></li>
-                    <li class="active"><a href="{{ site.baseurl }}/about.html">About</a></li>
-                    <li class="active"><a href="{{ site.baseurl }}/feed.xml">RSS</a></li>
+                    {% if page.pagename != '' and page.pagename == 'home' %}
+                        <li class="active"><a href="{{ site.baseurl }}/">首页</a></li>
+                    {% else %}
+                        <li><a href="{{ site.baseurl }}/">首页</a></li>
+                    {% endif %}
+                    {% if page.pagename != '' and page.pagename == 'links' %}
+                        <li class="active visible-xs-block"><a href="{{ site.baseurl }}/links.html">链接</a></li>
+                    {% else %}
+                        <li class="visible-xs-block"><a href="{{ site.baseurl }}/links.html">链接</a></li>
+                    {% endif %}
+                    {% if page.pagename != '' and page.pagename == 'archive' %}
+                        <li class="active"><a href="{{ site.baseurl }}/archive.html">文章</a></li>
+                    {% else %}
+                        <li><a href="{{ site.baseurl }}/archive.html">文章</a></li>
+                    {% endif %}
+                    {% if page.pagename != '' and page.pagename == 'about' %}
+                        <li class="active"><a href="{{ site.baseurl }}/about.html">关于</a></li>
+                    {% else %}
+                        <li><a href="{{ site.baseurl }}/about.html">关于</a></li>
+                    {% endif %}
+                    <li><a href="{{ site.baseurl }}/feed.xml" target="_black">订阅</a></li>
                     {% if site.github != '' %}
-                      <li class="active"><a href="https://github.com/{{ site.github }}">Github</a></li>
+                      <li><a href="https://github.com/{{ site.github }}" target="_black">Github</a></li>
                     {% endif %}
                 </ul>
             </nav>

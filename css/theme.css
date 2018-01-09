@@ -1,9 +1,26 @@
 body {
     padding-top: 60px;
     padding-bottom: 60px;
+    font-family: '微软雅黑','华文行楷','宋体','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 img {
     width: 100%;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: #428bca;
+}
+a:hover {
+    text-decoration: none;
+    color: #3071a9;
+}
+a:active {
+    text-decoration: none;
+    color: #3071a9;
 }
 
 .copyright {
@@ -23,17 +40,9 @@ img {
     font-size: 1.3em;
 }
 
-.sidebar a {
-    color: #428bca;
-}
-
 .sidebar li {
     margin-top: .7em;
     line-height: 1em;
-}
-
-.sidebar a:hover {
-    color: #3071a9;
 }
 
 .container-left {
@@ -43,6 +52,12 @@ img {
 .well h1 {
     color: #ee4444;
     font-size: 1.3em;
+}
+.well.well-nopadding{
+    padding: 0;
+}
+.well.well-nopadding img{
+    border-radius: 4px 4px 0 0;
 }
 
 .author {
@@ -57,4 +72,73 @@ img {
     .container {
         width: 1480px;
     }
+}
+.article .well .content p{
+    display: inline-block;
+    margin: 0;
+}
+.article .well .content p img{
+    float: left;
+    margin-right: 15px;
+}
+.article .well .content img{
+    max-width: 150px;
+    max-height: 150px;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.sidebar.well .authorinfo{
+    margin: 19px;
+}
+.sidebar.well .authorinfo .autograph{
+    margin-bottom: 10px;
+}
+.sidebar.well .authorinfo .authorrow{
+    margin: 5px 0;
+}
+.sidebar.well .authorinfo .authorrow span:nth-child(1){
+    width: 70px;
+    display: inline-block;
+    vertical-align: top;
+}
+.sidebar.well .authorinfo .authorrow span:nth-child(2){
+    display: inline-block;
+    width: 85px;
+}
+
+@media (min-width: 1500px){
+    .sidebar.well .authorinfo .authorrow span:nth-child(1){
+        width: 70px;
+    }
+    .sidebar.well .authorinfo .authorrow span:nth-child(2){
+        width: 145px;
+    }
+}
+@media (min-width: 1500px){
+    .sidebar.well .authorinfo .authorrow span:nth-child(1){
+        width: 70px;
+    }
+    .sidebar.well .authorinfo .authorrow span:nth-child(2){
+        width: 215px;
+    }
+}
+
+ul.targetul{
+    list-style: none;
+    padding: 0;
+}
+ul.targetul li{
+    
+}
+ul.targetul li i{
+    margin-right: 10px;
+}
+ul.targetul li a{
+    
 }
