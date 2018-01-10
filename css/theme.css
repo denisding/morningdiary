@@ -56,8 +56,78 @@ a:active {
 .well.well-nopadding{
     padding: 0;
 }
-.well.well-nopadding img{
+.sidebar.well.well-nopadding img{
     border-radius: 4px 4px 0 0;
+}
+.article.well.well-nopadding{
+    height: 500px;
+}
+.article.well.well-nopadding img{
+    border-radius: 4px 0 0 4px;
+    width: 500px;
+}
+.article.well.well-nopadding .authorinfo{
+    float: right;
+    height: 100%;
+    vertical-align: top;
+    padding: 19px;
+    font-size: 18px;
+}
+.article.well.well-nopadding .authorinfo .autograph{
+    font-size: 20px;
+    font-family: '楷体','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px 0;
+}
+.article.well .authorinfo .authorrow{
+    padding-bottom: 10px;
+}
+.article.well .authorinfo .authorrow span:nth-child(1){
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: "黑体",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.article.well .authorinfo .authorrow span:nth-child(2){
+    font-family: '楷体','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media (max-width: 992px){
+    .article.well.well-nopadding{
+        height: auto;
+    }
+    .article.well.well-nopadding img{
+        border-radius: 4px 4px 0 0;
+        width: 100%;
+        height: auto;
+    }
+    .article.well.well-nopadding .authorinfo{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+@media (min-width: 992px){
+    .article.well.well-nopadding .authorinfo{
+        width: 438px;
+    }
+    .article.well.well-nopadding .authorinfo .autograph{
+        margin: 10px 0 20px 0;
+    }
+}
+@media (min-width: 1200px){
+    .article.well.well-nopadding .authorinfo{
+        width: 638px;
+    }
+    .article.well.well-nopadding .authorinfo .autograph{
+        margin: 20px 0 40px 0;
+    }
+}
+@media (min-width: 1500px){
+    .article.well.well-nopadding .authorinfo{
+        width: 948px;
+    }
+    .article.well.well-nopadding .authorinfo .autograph{
+        margin: 30px 0 45px 0;
+    }
 }
 
 .author {

@@ -1,0 +1,32 @@
+<div class="sidebar well">
+    <h1>近期日记</h1>
+    <ul class="targetul">
+        {% for post in site.posts limit:5 %}
+          <li><a href="{{ site.baseurl}}{{ post.url }}"><i class="glyphicon glyphicon-chevron-right"></i>{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="sidebar well">
+    <h1>日记归档</h1>
+    <ul class="targetul">
+        {% assign precount = -1 %}
+        {% for post in site.posts %}
+            {% capture postcount %} {% increment postcount %} {% endcapture %}
+            {% if precount == -1 %}
+                {% assign precount = postcount | minus: 1 %}
+            {% endif %}
+            {% capture month %}{{ post.date | date: '%Y%m' }}{% endcapture %}
+            {% capture nmonth %}{{ post.previous.date | date: '%Y%m' }}{% endcapture %}
+            {% if month != nmonth %}
+                {% capture curcount %}{{postcount | minus: precount}}{% endcapture %}
+                <li>
+                    <a href="{{ site.baseurl }}/{{ post.date | date: '%Y/%m' }}">
+                        <i class="glyphicon glyphicon-calendar"></i>{{ post.date | date: '%Y年%m月' }} ({{curcount}})
+                    </a>
+                </li>
+                {% assign precount = postcount %}
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div> 

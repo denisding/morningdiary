@@ -1,9 +1,47 @@
 ---
-layout: default
+layout: black
 pagename: "about"
 ---
 
-<div class="well">
-    <h1>About me</h1>
-    <p>Hello, I am me.</p>
+<div class="article well well-nopadding">
+    <img src="{{ site.baseurl }}/images/fallman.jpg" alt="坠落的男人"/>
+    <div class="authorinfo">
+        <div class="autograph">{{ site.data.author.autograph }}</div>
+        <div class="authorrow">
+            <span class="">姓名：</span>
+            <span class="">{{ site.data.author.name }}</span>
+        </div>
+        <div class="authorrow">
+            <span class="">愿望：</span>
+            <span class="">{{ site.data.author.wish }}</span>
+        </div>
+        <div class="authorrow">
+            <span class="">想对你说：</span>
+            <span class="">{{ site.data.author.wanttosaytoyou }}</span>
+        </div>
+        <div class="authorrow">
+            <span class="">E-mail：</span>
+            <span class=""><a href="mailto:{{ site.data.author.email }}">发邮件</a></span>
+        </div>
+        <div class="authorrow">
+            <span class="">QQ：</span>
+            <span class="">{{ site.data.author.qq }}</span>
+        </div>
+        <div class="authorrow">
+            <span class="">微信：</span>
+            <span class="">{{ site.data.author.wechat }}</span>
+        </div>
+        <div class="authorrow">
+            <span class="">电话：</span>
+            <span class="">{{ site.data.author.telphone }}</span>
+        </div>
+        <div class="authorrow">
+            <span class="">Github：</span>
+            <span class=""><a href="https://github.com/{{ site.data.author.github }}" target="_black">{{ site.data.author.github }}</a></span>
+        </div>
+        <div class="authorrow">
+            <span class="">网站：</span>
+            <span class="">{{ site.data.author.website }}</span>
+        </div>
+    </div>
 </div>

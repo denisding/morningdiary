@@ -1,14 +1,14 @@
 {% include header.html %}
 
-<div class="container container-left">
+<div class="container">
     <div class="row">
         <div class="col-md-3 hidden-xs">
-            {% include sidebar.html %}
+            {% include archive-sidebar.html %}
         </div>
         <div class="col-md-9">
           <div class="article">
             <div class="well">
-                <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%b %-d, %Y" }} - {{ page.title }}</a></h1>
+                <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%Y年 %-m月 %-d日" }} - {{ page.title }}</a></h1>
             {% if site.comments and page.comments %}
                 {% if site.disqus != '' %}
                 <p class="author"><a href="#disqus_thread" data-disqus-identifier="{{ page.url | slugify }}">Comments</a></p>
@@ -32,12 +32,16 @@
             </div>
           </div>
           <div class="pagination">
-              {% if page.next %}
-                <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">Newer Post</a>
-              {% endif %}
-              {% if page.previous %}
-                <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">Older Post</a>
-              {% endif %}
+                {% if page.previous %}
+                    <a class="btn btn-default previous" href="{{ site.baseurl}}{{ page.previous.url }}">上一篇日记</a>
+                {% else %}
+                    <a class="btn btn-default previous disabled" href="javascript:void(0);">上一篇日记</a>
+                {% endif %}
+                {% if page.next %}
+                    <a class="btn btn-default next" href="{{ site.baseurl}}{{ page.next.url }}">下一篇日记</a>
+                {% else %}
+                    <a class="btn btn-default next disabled" href="javascript:void(0);">下一篇日记</a>
+                {% endif %}
           </div>
         </div>
     </div>
