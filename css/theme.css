@@ -156,6 +156,10 @@ a:active {
     display: inline-block;
     margin: 0;
 }
+.article .well .content p img{
+    width: auto;
+    max-width: 100%;
+}
 .article .well .post-excerpt p{
     display: inline-block;
     margin: 0;
