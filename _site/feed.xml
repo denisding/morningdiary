@@ -3,8 +3,8 @@
 	<channel>
 		<title>晨间日记</title>
 		<description>绘制人生美好蓝图！</description>
-		<link>http://localhost:4000/morningdiary</link>
-		<atom:link href="http://localhost:4000/morningdiary/feed.xml" rel="self" type="application/rss+xml" />
+		<link>https://denisding.github.io/morningdiary</link>
+		<atom:link href="https://denisding.github.io/morningdiary/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>晨间日志博客搭建基本完成</title>
@@ -12,8 +12,8 @@
 &lt;img src=&quot;/morningdiary/images/celebrate.jpg&quot; alt=&quot;庆祝&quot; /&gt;&lt;/p&gt;
 </description>
 				<pubDate>Thu, 11 Jan 2018 10:28:00 +0800</pubDate>
-				<link>http://localhost:4000/morningdiary/2018/01/11/release-introduction</link>
-				<guid isPermaLink="true">http://localhost:4000/morningdiary/2018/01/11/release-introduction</guid>
+				<link>https://denisding.github.io/morningdiary/2018/01/11/release-introduction</link>
+				<guid isPermaLink="true">https://denisding.github.io/morningdiary/2018/01/11/release-introduction</guid>
 			</item>
 		
 			<item>
@@ -22,8 +22,8 @@
 &lt;img src=&quot;/morningdiary/images/cateye.jpeg&quot; alt=&quot;猫眼&quot; /&gt;&lt;/p&gt;
 </description>
 				<pubDate>Tue, 09 Jan 2018 11:54:00 +0800</pubDate>
-				<link>http://localhost:4000/morningdiary/2018/01/09/welcome-to-morningdiary</link>
-				<guid isPermaLink="true">http://localhost:4000/morningdiary/2018/01/09/welcome-to-morningdiary</guid>
+				<link>https://denisding.github.io/morningdiary/2018/01/09/welcome-to-morningdiary</link>
+				<guid isPermaLink="true">https://denisding.github.io/morningdiary/2018/01/09/welcome-to-morningdiary</guid>
 			</item>
 		
 	</channel>
