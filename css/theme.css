@@ -143,6 +143,10 @@ a:active {
         width: 1480px;
     }
 }
+.article .well .post-info ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
 .article .well .content p{
     display: inline-block;
     margin: 0;

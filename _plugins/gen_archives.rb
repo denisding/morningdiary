@@ -61,18 +61,17 @@ module Jekyll
 {% for post in page.posts %}
     <div class="article">
       <div class="well">
-        <div class="post-title">
+        <h1>
           <a href="{{site.baseurl}}{{post.url}}"> {{post.title}}</a> </br>
-        </div>
+        </h1>
         <div class="post-info">
-          <ol>
-            <li class="post-time">{{ post.date | date: '%Y-%m-%d' }}</li> 
-            <li class="post-category"> {{ post.category }} </li>
-          </ol>
+          <ul class="targetul">
+            <li><i class="glyphicon glyphicon-calendar"></i>{{ post.date | date: '%Y-%m-%d' }}</li> 
+            <li><i class="glyphicon glyphicon-tag"></i>{% if post.category and post.category != '' %}{{ post.category }}{% else %}晨间日记{% endif %}</li>
+          </ul>
         </div>
-        <div class="post-preview">
-          {{ post.excerpt }} 
-          <a href="{{site.baseurl}}{{post.url}}"> Read More ... </a> </br>
+        <div class="content">
+          {{ post.excerpt }}
         </div>
       </div>
   </div>
