@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>晨间日记</title>
+		<description>绘制人生美好蓝图！</description>
+		<link>http://localhost:4000/morningdiary</link>
+		<atom:link href="http://localhost:4000/morningdiary/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>test2</title>
+				<description>&lt;p&gt;test2&lt;/p&gt;
+</description>
+				<pubDate>Wed, 10 Jan 2018 11:54:00 +0800</pubDate>
+				<link>http://localhost:4000/morningdiary/2018/01/10/archive-test2</link>
+				<guid isPermaLink="true">http://localhost:4000/morningdiary/2018/01/10/archive-test2</guid>
+			</item>
+		
+			<item>
+				<title>test1</title>
+				<description>&lt;p&gt;test1&lt;/p&gt;
+</description>
+				<pubDate>Wed, 10 Jan 2018 11:50:00 +0800</pubDate>
+				<link>http://localhost:4000/morningdiary/2018/01/10/archive-test1</link>
+				<guid isPermaLink="true">http://localhost:4000/morningdiary/2018/01/10/archive-test1</guid>
+			</item>
+		
+			<item>
+				<title>欢迎访问我的个人晨间日记!</title>
+				<description>&lt;p&gt;欢迎访问我的个人晨间日记！该私人博客目前处于建设中，布局和样式将不定期修改！
+&lt;img src=&quot;/morningdiary/images/cateye.jpeg&quot; alt=&quot;猫眼&quot; /&gt;&lt;/p&gt;
+</description>
+				<pubDate>Tue, 09 Jan 2018 11:54:00 +0800</pubDate>
+				<link>http://localhost:4000/morningdiary/2018/01/09/welcome-to-morningdiary</link>
+				<guid isPermaLink="true">http://localhost:4000/morningdiary/2018/01/09/welcome-to-morningdiary</guid>
+			</item>
+		
+			<item>
+				<title>test4</title>
+				<description>&lt;p&gt;test4&lt;/p&gt;
+</description>
+				<pubDate>Fri, 10 Nov 2017 11:54:00 +0800</pubDate>
+				<link>http://localhost:4000/morningdiary/2017/11/10/archive-test4</link>
+				<guid isPermaLink="true">http://localhost:4000/morningdiary/2017/11/10/archive-test4</guid>
+			</item>
+		
+			<item>
+				<title>test3</title>
+				<description>&lt;p&gt;test3&lt;/p&gt;
+</description>
+				<pubDate>Tue, 10 Oct 2017 11:54:00 +0800</pubDate>
+				<link>http://localhost:4000/morningdiary/2017/10/10/archive-test3</link>
+				<guid isPermaLink="true">http://localhost:4000/morningdiary/2017/10/10/archive-test3</guid>
+			</item>
+		
+	</channel>
+</rss>
