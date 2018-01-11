@@ -49,6 +49,11 @@ a:active {
     margin: 0;
 }
 
+.pagination{
+    display: block;
+    text-align: center;
+}
+
 .well h1 {
     color: #ee4444;
     font-size: 1.3em;
@@ -151,11 +156,15 @@ a:active {
     display: inline-block;
     margin: 0;
 }
-.article .well .content p img{
+.article .well .post-excerpt p{
+    display: inline-block;
+    margin: 0;
+}
+.article .well .post-excerpt p img{
     float: left;
     margin-right: 15px;
 }
-.article .well .content img{
+.article .well .post-excerpt img{
     max-width: 150px;
     max-height: 150px;
     padding: 4px;

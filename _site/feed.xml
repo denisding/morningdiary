@@ -7,21 +7,13 @@
 		<atom:link href="http://localhost:4000/morningdiary/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>test2</title>
-				<description>&lt;p&gt;test2&lt;/p&gt;
+				<title>晨间日志博客搭建基本完成</title>
+				<description>&lt;p&gt;晨间日志博客搭建基本完成，如果让你感觉不适，欢迎提建议，可以直接QQ或者微信给我，也可以Email给我！
+&lt;img src=&quot;/morningdiary/images/celebrate.jpg&quot; alt=&quot;庆祝&quot; /&gt;&lt;/p&gt;
 </description>
-				<pubDate>Wed, 10 Jan 2018 11:54:00 +0800</pubDate>
-				<link>http://localhost:4000/morningdiary/2018/01/10/archive-test2</link>
-				<guid isPermaLink="true">http://localhost:4000/morningdiary/2018/01/10/archive-test2</guid>
-			</item>
-		
-			<item>
-				<title>test1</title>
-				<description>&lt;p&gt;test1&lt;/p&gt;
-</description>
-				<pubDate>Wed, 10 Jan 2018 11:50:00 +0800</pubDate>
-				<link>http://localhost:4000/morningdiary/2018/01/10/archive-test1</link>
-				<guid isPermaLink="true">http://localhost:4000/morningdiary/2018/01/10/archive-test1</guid>
+				<pubDate>Thu, 11 Jan 2018 10:28:00 +0800</pubDate>
+				<link>http://localhost:4000/morningdiary/2018/01/11/release-introduction</link>
+				<guid isPermaLink="true">http://localhost:4000/morningdiary/2018/01/11/release-introduction</guid>
 			</item>
 		
 			<item>
@@ -32,24 +24,6 @@
 				<pubDate>Tue, 09 Jan 2018 11:54:00 +0800</pubDate>
 				<link>http://localhost:4000/morningdiary/2018/01/09/welcome-to-morningdiary</link>
 				<guid isPermaLink="true">http://localhost:4000/morningdiary/2018/01/09/welcome-to-morningdiary</guid>
-			</item>
-		
-			<item>
-				<title>test4</title>
-				<description>&lt;p&gt;test4&lt;/p&gt;
-</description>
-				<pubDate>Fri, 10 Nov 2017 11:54:00 +0800</pubDate>
-				<link>http://localhost:4000/morningdiary/2017/11/10/archive-test4</link>
-				<guid isPermaLink="true">http://localhost:4000/morningdiary/2017/11/10/archive-test4</guid>
-			</item>
-		
-			<item>
-				<title>test3</title>
-				<description>&lt;p&gt;test3&lt;/p&gt;
-</description>
-				<pubDate>Tue, 10 Oct 2017 11:54:00 +0800</pubDate>
-				<link>http://localhost:4000/morningdiary/2017/10/10/archive-test3</link>
-				<guid isPermaLink="true">http://localhost:4000/morningdiary/2017/10/10/archive-test3</guid>
 			</item>
 		
 	</channel>

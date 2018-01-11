@@ -58,7 +58,7 @@ module Jekyll
       self.ext = '.html'
       self.basename = 'index'
       self.content = <<-EOS
-{% for post in page.posts %}
+{% for post in page.posts reversed %}
     <div class="article">
       <div class="well">
         <h1>
@@ -67,10 +67,10 @@ module Jekyll
         <div class="post-info">
           <ul class="targetul">
             <li><i class="glyphicon glyphicon-calendar"></i>{{ post.date | date: '%Y-%m-%d' }}</li> 
-            <li><i class="glyphicon glyphicon-tag"></i>{% if post.category and post.category != '' %}{{ post.category }}{% else %}晨间日记{% endif %}</li>
+            <li><i class="glyphicon glyphicon-tag"></i>{% if post.category and post.category != '' %}{{ post.category }}{% else %}默认分组{% endif %}</li>
           </ul>
         </div>
-        <div class="content">
+        <div class="post-excerpt">
           {{ post.excerpt }}
         </div>
       </div>
