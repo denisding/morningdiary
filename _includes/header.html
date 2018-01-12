@@ -3,9 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
+    {% if page.title %}
+    <title>{{ page.title }} - {{ site.name }}</title>
+    <meta property="og:title" content="{{ page.title }} - {{ site.name }}"/>
+    {% else %}
     <title>{{ site.name }}</title>
+    <meta property="og:title" content="{{ site.name }}"/>
+    {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="晨间日记：绘制人生美好蓝图！">
+    {% if page.description %}
+    <meta name="description" content="{{ site.name }}：{{ page.description }}">
+    <meta property="og:description" content="{{ site.name }}：{{ page.description }}">
+    {% else %}
+    <meta name="description" content="{{ site.name }}：绘制人生美好蓝图！">
+    <meta property="og:description" content="{{ site.name }}：绘制人生美好蓝图！">
+    {% endif %}
+    <meta property="og:type" content="article"/>
+    {% if page.image %}
+    <meta property="og:image" content="{{ site.baseurl }}{{ page.image }}"/>
+    {% else %}
+    <meta property="og:image" content="{{ site.baseurl }}/images/fallman.jpg"/>
+    {% endif %}
+    <!-- <meta property="og:url" content="http://v.youku.com/v_show/id_XMTIyMTY5NzMyyyyyyyyyyyyyyyy.html"/> -->
+    
     <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
     <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet" type="text/css">

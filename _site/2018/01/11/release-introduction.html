@@ -3,13 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>晨间日记</title>
+    
+    <title>晨间日志博客搭建基本完成 - 晨间日记</title>
+    <meta property="og:title" content="晨间日志博客搭建基本完成 - 晨间日记"/>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="晨间日记：晨间日志博客搭建基本完成">
+    <meta property="og:description" content="晨间日记：晨间日志博客搭建基本完成">
+    
+    <meta property="og:type" content="article"/>
+    
+    <meta property="og:image" content="/morningdiary/images/celebrate.jpg"/>
+    
+    <!-- <meta property="og:url" content="http://v.youku.com/v_show/id_XMTIyMTY5NzMyyyyyyyyyyyyyyyy.html"/> -->
+    
     <script src="/morningdiary/js/jquery.min.js"></script>
     <script src="/morningdiary/js/bootstrap.min.js"></script>
     <link href="/morningdiary/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/morningdiary/css/theme.css" rel="stylesheet" type="text/css">
     <link href="/morningdiary/css/syntax.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="/morningdiary/favicon.ico">
 
 
 </head>
@@ -132,7 +146,22 @@
 
 
 
-
+    <script type="text/javascript">
+        (function() {
+            var OriginTitile = document.title, titleTime;
+            document.addEventListener('visibilitychange', function() {
+                if (document.hidden) {
+                    document.title = '死鬼,早点回来！';
+                    clearTimeout(titleTime);
+                } else {
+                    document.title = '想你好久了！';
+                    titleTime = setTimeout(function() {
+                        document.title = OriginTitile;
+                    },2000);
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
 
