@@ -80,7 +80,7 @@ module Jekyll
       self.data = {
           'layout' => @layout,
           'type' => 'archive',
-          'title' => "Monthly archive for #{@year}/#{@month}",
+          'title' => "日记归档 #{@year}年#{@month}月",
           'posts' => posts
       } 
     end
