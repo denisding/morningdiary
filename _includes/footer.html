@@ -8,6 +8,21 @@
 
 {% include disqus-counts.html %}
 {% include analytics.html %}
-
+    <script type="text/javascript">
+        (function() {
+            var OriginTitile = document.title, titleTime;
+            document.addEventListener('visibilitychange', function() {
+                if (document.hidden) {
+                    document.title = '死鬼,早点回来！';
+                    clearTimeout(titleTime);
+                } else {
+                    document.title = '想你好久了！';
+                    titleTime = setTimeout(function() {
+                        document.title = OriginTitile;
+                    },2000);
+                }
+            });
+        })();
+    </script>
 </body>
 </html>

@@ -49,3 +49,11 @@
 
 {% include disqus-comments.html %}
 {% include footer.html %}
+
+{% if page.title %}
+    <script type="text/javascript">
+        (function() {
+            document.title = "{{ page.title }}";
+        })();
+    </script>
+{% endif %}
