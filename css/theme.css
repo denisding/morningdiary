@@ -2,6 +2,7 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
     font-family: '微软雅黑','华文行楷','宋体','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ccc;
 }
 img {
     width: 100%;
@@ -53,7 +54,12 @@ a:active {
     display: block;
     text-align: center;
 }
-
+.well {
+    background-color: "#fafafa";
+    border-width: 0px;
+    -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,.05);
+    box-shadow: inset 0 0 0 rgba(0,0,0,.05)
+}
 .well h1 {
     color: #ee4444;
     font-size: 1.3em;
@@ -187,7 +193,8 @@ a:active {
     margin-bottom: 10px;
 }
 .sidebar.well .authorinfo .authorrow{
-    margin: 5px 0;
+    padding: 5px 0;
+    border-bottom: 1px dotted #eee;
 }
 .sidebar.well .authorinfo .authorrow span:nth-child(1){
     width: 70px;
