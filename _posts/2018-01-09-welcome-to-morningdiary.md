@@ -1,5 +1,6 @@
 ---
 layout: post
+pagename: "archive"
 title:  "欢迎访问我的个人晨间日记!"
 description: "欢迎访问我的个人晨间日记"
 image: "/images/cateye.jpg"

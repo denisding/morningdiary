@@ -80,6 +80,7 @@ module Jekyll
       self.data = {
           'layout' => @layout,
           'type' => 'archive',
+          'pagename' => 'archive',
           'title' => "日记归档 #{@year}年#{@month}月",
           'posts' => posts
       } 

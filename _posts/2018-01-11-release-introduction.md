@@ -1,5 +1,6 @@
 ---
 layout: post
+pagename: "archive"
 title:  "晨间日志博客搭建基本完成"
 description: "晨间日志博客搭建基本完成"
 image: "/images/celebrate.jpg"
